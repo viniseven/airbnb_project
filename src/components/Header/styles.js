@@ -5,9 +5,14 @@ export const Container = styled.div`
 
   padding: 2rem;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 .brand{
   display: flex;
   gap: 1.2rem;
+  align-items: center;
 
   img{
     width: 2.9rem;
@@ -20,5 +25,14 @@ export const Container = styled.div`
 
     color: ${({theme}) => theme.COLORS.PURPLE};
   }
+}
+
+.btn-actions-user{
+  border: 1px solid ${({ theme}) => theme.COLORS.LIGHT_GRAY};
+  border-radius: 4rem;
+  padding: 0.5rem;
+
+  display: flex;
+  gap: 2rem;
 }
 `;
